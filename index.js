@@ -20,6 +20,18 @@ client.on('ready', () => {
    console.log(`${client.user.username} Successfully Logged in!`)
 })
 
+module.exports = client;
+const { GiveawaysManager } = require('discord-giveaways');
+client.giveaways = new GiveawaysManager(client, {
+   storage: './give.json',
+   updateCountdownEvery: 5000, // 5000 in seconds is 5 seconds
+   default: {
+      botsCanWin: false,
+      embedColor: '#FF0000',
+      reaction: '🎉'
+   }
+})
+
 client.on('message', async message => {
 
      const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
