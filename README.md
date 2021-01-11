@@ -1,4 +1,4 @@
-## Advanced Discord Bot, make sure to fill up `config.js`
+## Advanced Discord Bot, make sure to fill up `config.json`
 
 DON'T JUST COPY PASTE!
 
